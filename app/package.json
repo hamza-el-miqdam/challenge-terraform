@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js",
+    "build-docker": "docker build -t bookstore ."
+  },
+  "dependencies": {
+    "aws-sdk": "~2.1284.0",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  }
+}
