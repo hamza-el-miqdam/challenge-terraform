@@ -16,6 +16,7 @@ module "alb" {
   public_subnet_ids = var.public_subnet_ids
   vpc_id            = var.vpc_id
   application_port  = local.application_port
+  route53_zone_name = var.route53_zone_name
 }
 
 module "ecs" {

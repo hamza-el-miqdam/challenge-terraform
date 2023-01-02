@@ -22,3 +22,8 @@ variable "secret_name" {
   description = "SecretManager secret name"
   type        = string
 }
+
+variable "route53_zone_name" {
+  description = "Route53 zone name"
+  type        = string
+}

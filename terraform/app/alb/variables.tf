@@ -18,3 +18,8 @@ variable "application_port" {
   type        = number
   default     = 3000
 }
+
+variable "route53_zone_name" {
+  description = "Route53 zone name"
+  type        = string
+}
