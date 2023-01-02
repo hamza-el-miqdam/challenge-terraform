@@ -17,3 +17,8 @@ variable "ecr_repository_name" {
   description = "ECR repository name"
   type        = string
 }
+
+variable "secret_name" {
+  description = "SecretManager secret name"
+  type        = string
+}

@@ -29,7 +29,7 @@ module "ecs" {
   application_port      = local.application_port
   ecr_repository_name   = var.ecr_repository_name
   vpc_id                = var.vpc_id
-
+  secret_name           = var.secret_name
 
   depends_on = [
     module.alb,

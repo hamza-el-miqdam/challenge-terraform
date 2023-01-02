@@ -15,9 +15,15 @@ data "aws_iam_policy_document" "task_execution" {
       "ecr:BatchCheckLayerAvailability",
       "ecr:BatchGetImage",
       "ecr:GetAuthorizationToken",
-      "ecr:GetDownloadUrlForLayer",
-      "logs:CreateLogGroup",
-      "logs:CreateLogStream",
+      "ecr:GetDownloadUrlForLayer"
+    ]
+
+    resources = ["*"]
+  }
+  statement {
+    actions = [
+      "kms:Decrypt",
+      "secretsmanager:GetSecretValue",
     ]
 
     resources = ["*"]
@@ -65,24 +71,11 @@ data "aws_iam_policy_document" "task_role" {
 
     actions = [
       "dynamodb:PutItem",
-      "dynamodb:GetItem",
+      "dynamodb:Scan",
     ]
 
     resources = [
       var.dynamodb_table_arn,
-    ]
-  }
-  statement {
-    sid = "LogsToCloudWatch"
-
-    actions = [
-      "logs:CreateLogGroup",
-      "logs:CreateLogStream",
-      "logs:PutLogEvents",
-    ]
-
-    resources = [
-      "*"
     ]
   }
 }

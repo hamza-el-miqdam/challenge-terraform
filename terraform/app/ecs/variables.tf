@@ -38,3 +38,8 @@ variable "vpc_id" {
   description = "Vpc ids"
   type        = string
 }
+
+variable "secret_name" {
+  description = "SecretManager secret name"
+  type        = string
+}

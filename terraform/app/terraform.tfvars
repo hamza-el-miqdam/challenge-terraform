@@ -1,15 +1,14 @@
 private_subnet_ids = [
-  "subnet-03c4b30743263b22c",
-  "subnet-0c7a9d0150717466b",
-  "subnet-0381b83ca2114cdf0",
+  "subnet-04e2216c6d48ebc36",
+  "subnet-01fb4b5dfa80f3f95",
+  "subnet-04ffe08642760e386",
 ]
-
 public_subnet_ids = [
-  "subnet-033ed50d60862e187",
-  "subnet-0a62c30efaa89c279",
-  "subnet-0035079dc04b249f2",
+  "subnet-00690eb6202e937c9",
+  "subnet-0f68f8fa48a0f20ad",
+  "subnet-05be0569d2282cf3e",
 ]
 
-vpc_id = "vpc-09ddddd1b57cf8297"
-
+vpc_id              = "vpc-04cbcb08b07aec8fc"
 ecr_repository_name = "bookstore"
+secret_name         = "bookstore-XqdigV"

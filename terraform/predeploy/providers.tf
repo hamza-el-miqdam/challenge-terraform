@@ -4,7 +4,7 @@ provider "aws" {
   default_tags {
     tags = {
       "Challenge" = true
-      "Source"    = "tf-registry"
+      "Source"    = "tf-predeploy"
     }
   }
 }
