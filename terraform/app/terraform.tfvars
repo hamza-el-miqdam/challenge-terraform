@@ -13,3 +13,5 @@ vpc_id              = "vpc-04cbcb08b07aec8fc"
 ecr_repository_name = "bookstore"
 secret_name         = "bookstore-XqdigV"
 route53_zone_name   = "dev.hamzaelmiqdam.com"
+
+alerting_email = "elmiqdam@gmail.com"

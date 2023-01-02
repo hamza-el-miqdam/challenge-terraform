@@ -27,3 +27,8 @@ variable "route53_zone_name" {
   description = "Route53 zone name"
   type        = string
 }
+
+variable "alerting_email" {
+  description = "Email to send alerts too"
+  type        = string
+}

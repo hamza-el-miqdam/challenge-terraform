@@ -43,3 +43,8 @@ variable "secret_name" {
   description = "SecretManager secret name"
   type        = string
 }
+
+variable "alerting_email" {
+  description = "Email to send alerts too"
+  type        = string
+}

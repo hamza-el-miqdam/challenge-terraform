@@ -31,6 +31,7 @@ module "ecs" {
   ecr_repository_name   = var.ecr_repository_name
   vpc_id                = var.vpc_id
   secret_name           = var.secret_name
+  alerting_email        = var.alerting_email
 
   depends_on = [
     module.alb,
